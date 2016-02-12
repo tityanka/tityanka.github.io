@@ -1,0 +1,43 @@
+html, body {
+	margin: auto 0;
+	padding: 0;
+}
+* {
+	font-family: 'Poiret One', cursive;
+	font-size: 15px;
+
+}
+h1 {
+    font-size: 50px;
+    line-height: 50px;
+}
+body {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+header {
+	/*background: url(images/DSCN6214.jpg);*/
+		color: #fff;
+		position:fixed;
+		left: 0;
+		height: 100%;
+		width: 30%;
+		border: 1px solid tomato;
+
+}
+main {
+   width: 68%;
+   margin-left: 30%;
+   border: 1px solid violet;
+
+}
+
+.wrap {
+	display: inline-block;
+
+}
