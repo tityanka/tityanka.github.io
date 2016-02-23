@@ -1,0 +1,201 @@
+html,
+body {
+    margin: auto 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+body {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    position: relative;
+
+}
+p {
+    text-align: justify;
+}
+.img-circle {border-radius: 50%;}
+header {
+    background: url(../images/DSCN6214.jpg) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 40%;
+    /*		border: 1px solid tomato;*/
+    text-align: right;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    
+flex-flow: column nowrap;
+
+    justify-content: flex-start;
+}
+
+nav {
+    margin: 3em;
+}
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 50px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+.logo {
+	color: #fff;
+	margin: 3em;
+}
+.home div {
+	text-align: center;
+	margin-top: 30px;
+
+
+}
+.home div img {
+    width: 200px;
+    height: 200px;
+}
+footer {
+	color: #fff;
+	position: fixed;
+    width: 20%;
+	bottom: 5%;
+	left: 15%;
+}
+
+main {
+    width: 58%;
+    margin-left: 41%;
+/*    border: 1px solid violet;*/
+
+}
+
+.wrap {
+    display: inline-block;
+
+}
+
+
+/* start of @media  */
+
+
+@media all and (max-width: 960px) {
+
+header {
+    position: relative;
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+}
+footer {
+    position: relative;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: red;
+    text-align: center;
+}
+nav {
+    margin: .1em;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: .1em;
+    padding: .3em;
+}
+
+
+.logo {
+    margin: 0;
+}
+main {
+    width: 100%;
+    margin: 0;
+    padding: 1em;
+}
+
+.services > p {
+    width: 100%;
+    float: left;
+    text-align: justify;
+}
+
+.gallery > img {
+    width: 48%;
+}
+
+}
+
+
+@media all and (min-width: 960px) {
+.services > p {
+    width: 47%;
+}
+.gallery > img {
+    width: 23%;
+}
+
+
+}
+
+
+
+/* end of @media  */
+
+
+
+.services > p {
+    float: left;
+
+}
+.services > a+p {
+    margin-right: 1em;
+}
+
+
+.clear {
+    clear: both;
+}
+
+.gallery > img {
+    transition:1s;
+} 
+.gallery > img:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+}
+.contacts > *{
+    text-align: center;
+/*    padding: 1.5em;
+*/}
