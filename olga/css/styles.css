@@ -2,14 +2,22 @@ html,
 body {
     margin: auto 0;
     padding: 0;
+    font-family: Roboto-Regular, Arial, sans-serif;
 }
 
 h1 {
+    font-family: 'Lobster', cursive;
     font-size: 50px;
     line-height: 50px;
     text-align: center;
-}
+    color: #33333c;
 
+}
+h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    text-align: right;
+}
 body {
     display: -webkit-flex;
     display: -moz-flex;
@@ -50,21 +58,26 @@ flex-flow: column nowrap;
 }
 
 nav {
-    margin: 3em;
+    margin: 3em
+
 }
 nav ul {
     list-style-type: none;
-}
 
+}nav ul li {padding: 15px;}
 nav ul li a {
+
+    font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
-    color: #fff;
-    line-height: 50px;
+    color: #333;
+    line-height: 15px;
+    padding: 15px;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+
+nav ul li:hover  a{
+    border: 2px solid #333;
 }
 .logo {
 	color: #fff;
@@ -120,8 +133,8 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    color: red;
-    text-align: center;
+/*    color: red;
+*/    text-align: center;
 }
 nav {
     margin: .1em;
@@ -197,5 +210,5 @@ main {
 }
 .contacts > *{
     text-align: center;
-/*    padding: 1.5em;
-*/}
+    padding: 1.5em;
+}
