@@ -8,6 +8,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+
 /*section {
     margin-top: 75px;
     margin-bottom: 75px;
@@ -38,6 +39,11 @@ h1 {
     line-height: 1;
 }
 
+input[type=submit] {
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
 .colored span:last-child {
     color: #f7600e;
 }
@@ -48,6 +54,7 @@ h1 {
 }
 
 header,
+footer,
 .newsletter,
 .comments,
 .say_hello {
@@ -124,7 +131,7 @@ header,
 .icon-printer,
 .icon-monitor,
 .icon-phone,
-.icon-pencils{
+.icon-pencils {
     font-size: 50px;
     margin: auto;
     color: #f7600e;
@@ -141,14 +148,15 @@ header,
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    
 }
+
 .services {
     width: 70%;
     margin: 30px auto;
     /*padding: 75px;*/
     text-align: center;
 }
+
 .flex-item {
     display: -webkit-flex;
     display: -moz-flex;
@@ -159,6 +167,7 @@ header,
     justify-content: space-around;
     align-content: space-around;
 }
+
 .print_item,
 .web_item,
 .app_item,
@@ -174,7 +183,6 @@ header,
     .portfolio a:nth-child(even) {
         display: none;
     }
-
 }
 
 @media all and (max-width: 600px) {
@@ -184,8 +192,8 @@ header,
     .portfolio a:nth-child(even) {
         display: none;
     }
-
 }
+
 .newsletter form {
     padding: 50px;
 }
@@ -197,18 +205,26 @@ header,
     border: none;
     border-radius: 5px;
 }
-.newsletter input[type=email]{width: 300px;}
-.newsletter input[type=submit]{width: 150px; cursor: pointer;}
+
+.newsletter input[type=email] {
+    width: 300px;
+}
+
+.newsletter input[type=submit] {
+    width: 150px;
+    cursor: pointer;
+}
+
 .form_btn {
     background-color: #f7600e;
     text-transform: uppercase;
     color: #fff;
-    padding: 10px ;
+    padding: 10px;
     border: none;
 }
 
 .our-works,
-.team  {
+.team {
     width: 70%;
     margin: 0 auto;
     text-align: center;
@@ -220,14 +236,10 @@ header,
     border-radius: 15px;
     margin: 20px;
 }
-.portfolio a {
 
-}
-.icon-arrow-left,
-.icon-arrow-right {
-    line-height: 115;
-}
-.container{
+.portfolio a {}
+
+.container {
     margin-top: 80px;
     display: -webkit-flex;
     display: -moz-flex;
@@ -236,56 +248,71 @@ header,
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-
-
 }
+
 .container .item {
     width: 23%;
 }
-.container .item img{
+
+.container .item img {
     width: 250px;
     height: 100hv;
 }
+
 .container .item img:hover {
-    width: 280px;
+    /*width: 280px;*/
 }
+
 .container a {
     color: #ccc;
     display: block;
 }
-.container a:hover {
 
-}
+.container a:hover {}
+
 .say_hello form {
     width: 50%;
     margin: 0 auto;
     padding: 50px;
     text-align: left;
 }
-.say_hello form input:first-child {margin-right: 30px;}
-.say_hello input, .say_hello textarea {
+
+.say_hello form input:first-child {
+    margin-right: 30px;
+}
+
+.say_hello input,
+.say_hello textarea {
     padding: 10px;
     margin-bottom: 30px;
     border: none;
     border-radius: 5px;
 }
-.say_hello input {
-    width: 43%;
 
+.say_hello input {
+    width: 42%;
 }
+
+.say_hello textarea {
+    width: 92%;
+}
+
 .say_hello input[type=submit] {
     width: 25%;
     cursor: pointer;
 }
-footer {
-    background-color: #708090;
-    margin: 0 auto;
 
-}
-footer p{
-    line-height: 40px;
-}
 .social-form {
     display: inline-block;
     float: right;
+}
+
+footer {
+    background-color: #708090;
+    margin: 0 auto;
+}
+
+footer p {
+    /*line-height: 40px;*/
+    text-transform: uppercase;
 }
