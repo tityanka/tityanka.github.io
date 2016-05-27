@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="skillApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My App</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper teal darken-2">
+            <div class="container">
+                <a ui-sref="main" class="brand-logo center">Skill-school</a>
+                <ul class="left hide-on-med-and-down">
+                    <li><a ui-sref="catalog" class="waves-effect waves-light ">Все курсы</a></li>
+                    <li><a ui-sref="spec" class="waves-effect waves-light ">Специализации</a></li>
+                    <li><a ui-sref="schools" class="waves-effect waves-light ">Школы</a></li>
+                </ul>
+                <ul class="right">
+                    <li><a class="waves-effect waves-light modal-trigger" href="#modal1">Войти</a></li>
+                    <li><a class="waves-effect waves-light modal-trigger" href="#modal2">Регистрация</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+  <!-- Вход -->
+  <div id="modal1" class="modal grey-text">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn">Agree</a>
+    </div>
+  </div>
+
+
+  <!-- Регистрация -->
+  <div id="modal2" class="modal grey-text">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn">Agree</a>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+    </nav>
+    <main>
+        <div ui-view></div>
+    </main>
+    <footer class="page-footer teal darken-3 ">
+        <div class="container">
+            <div class="row">
+                <div class="col s3">
+                    <h3 class="white-text">Links</h3>
+                    <h5 class="grey-text text-lighten-3">Lorem ipsum </h5>
+                    <p class="grey-text text-lighten-3">Optio sint at, molestias nisi voluptas inventore minus suscipit! Sequi maiores eaque asperiores est earum debitis, minima aut architecto, distinctio atque, perferendis soluta quibusdam repellat, voluptas tempora necessitatibus excepturi perspiciatis!</p>
+                </div>
+                <div class="col s6 offset-s3">
+                    <div class="row">
+                        <div class="col s4">
+                            <h5 class="white-text">Links</h5>
+                            <ul>
+                                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                            </ul>
+                        </div>
+                        <div class="col s4">
+                            <h5 class="white-text">Links</h5>
+                            <ul>
+                                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                            </ul>
+                        </div>
+                        <div class="col s4">
+                            <h5 class="white-text">Links</h5>
+                            <ul>
+                                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
