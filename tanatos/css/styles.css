@@ -306,7 +306,9 @@ footer,
     display: inline-block;
     float: right;
 }
-
+.social-form span {
+    cursor: pointer;
+}
 footer {
     background-color: #708090;
     margin: 0 auto;
