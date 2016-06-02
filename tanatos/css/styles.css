@@ -305,9 +305,10 @@ footer,
 .social-form {
     display: inline-block;
     float: right;
+    cursor: pointer;
 }
 .social-form span {
-    cursor: pointer;
+
 }
 footer {
     background-color: #708090;
