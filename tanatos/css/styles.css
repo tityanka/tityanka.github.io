@@ -221,6 +221,7 @@ footer,
     color: #fff;
     padding: 10px;
     border: none;
+    cursor: pointer;
 }
 
 .our-works,
@@ -307,9 +308,7 @@ footer,
     float: right;
     cursor: pointer;
 }
-.social-form span {
 
-}
 footer {
     background-color: #708090;
     margin: 0 auto;
