@@ -13,7 +13,7 @@
 
 <body>
     <div class="first"><img src="img/map.jpg" alt="Ukraine"></div>
-    <div class="second">    <canvas id="path" width="800" height="10000">Not working CANVAS in your browser</canvas>
+    <div class="second">    <canvas id="path" width="1000" height="500">Not working CANVAS in your browser</canvas>
 </div>
     <div id="point" class="pointA" onclick="canvas()"></div>
     <div class="pointB"></div>
@@ -30,12 +30,12 @@ function canvas() {
     ctx.strokeStyle = "white";
     ctx.shadowColor = "white";
     ctx.shadowBlur = 30;
-    ctx.moveTo(185,235);
-    ctx.quadraticCurveTo(336,216,438,365);
-    ctx.moveTo(185,235);
-    ctx.quadraticCurveTo(430,85,684,288);
-    ctx.moveTo(185,235);
-    ctx.quadraticCurveTo(475,132,655,424);
+    ctx.moveTo(235,205);
+    ctx.quadraticCurveTo(420,190,550,315);
+    ctx.moveTo(235,205);
+    ctx.quadraticCurveTo(530,33,850,245);
+    ctx.moveTo(235,205);
+    ctx.quadraticCurveTo(570,110,815,362);
     ctx.stroke();
 
 }
