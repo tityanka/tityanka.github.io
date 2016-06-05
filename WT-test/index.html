@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WT Test</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+
+
+<body>
+    <div class="first"><img src="img/map.jpg" alt="Ukraine"></div>
+    <div class="second">    <canvas id="path" width="800" height="10000">Not working CANVAS in your browser</canvas>
+</div>
+    <div id="point" class="pointA" onclick="canvas()"></div>
+    <div class="pointB"></div>
+    <div class="pointC"></div>
+    <div class="pointD"></div>    
+
+
+    <script>
+
+function canvas() {
+    var c = document.getElementById('path');
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.strokeStyle = "white";
+    ctx.shadowColor = "white";
+    ctx.shadowBlur = 30;
+    ctx.moveTo(185,235);
+    ctx.quadraticCurveTo(336,216,438,365);
+    ctx.moveTo(185,235);
+    ctx.quadraticCurveTo(430,85,684,288);
+    ctx.moveTo(185,235);
+    ctx.quadraticCurveTo(475,132,655,424);
+    ctx.stroke();
+
+}
+
+
+    </script>
+
+</body>
+
+</html>
