@@ -7,8 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/vendor.min.css">
-    <link rel="stylesheet" href="css/main.min.css">
+    <!--build:css css/vendor.min.css-->
+    <!--bower:css-->
+    <link rel="stylesheet" href="css/fonts.css">
+    <!-- <link rel="stylesheet" href="bower_components/Materialize/bin/materialize.css"> -->
+    <!--endbower-->
+    <!--endbuild-->
+    <!-- build:css css/main.min.css-->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- endbuild-->
 </head>
 
 <body>
@@ -36,7 +43,12 @@
                 <p>Чтобы все запланированное воплотилось максимально, а непредвиденных отклонений было как можно меньше – нужно очень ответственно отнестись к выбору дизайнера, т.к. удачный выбор дизайнера убережет Вас от лишней нервотрепки, финансовых потерь и даст возможность получить желаемый результат, максимально приближенный к запланированной финансовой смете и визуализации проекта. В силу различных обстоятельств расхождение между проектом и конечным результатом может составлять от 30% до 70%.</p>
                 <p>Необходимо так же учитывать, что наилучший результат достигается при ведении дизайнером авторского надзора. В этом случае <u>дизайнер отвечает</u> за все этапы проведения строительных работ и оформления интерьера. </p>
                 <hr>
-            </section> 
+            </section>
+            <!--             <section class="about">
+                <a name="about"><h1>Моя история</h1></a>
+                <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <hr>
+            </section> -->
             <section class="services">
                 <a name="services"><h1>Что я могу предложить?</h1></a>
                 <p><u><b>Одиннадцать лет работы</b></u> со своими проектами и проектами других дизайнеров дали мне возможность изучить ошибки, допущенные при разработке и реализации различных проектов и предотвратить их впоследствии в своей работе. </p>
@@ -46,7 +58,6 @@
                         <li>в МОСКВЕ-I SALONI WORLDWIDE 2009, 2010, 2011,2012</li>
                         <li>а также выставки, проводимые в Киеве.</li>
                     </ul>
-                
                 <p>Кроме того, посещение итальянских фабрик-изготовителей мебели и освещения, их производства и шоу-румов, оставило неизгладимые и очень полезные для работы дизайнера впечатления.</p>
                 <p><u><b>Еще один важный пункт в работе при создании интерьера</b></u> – это выбор предметов внутреннего наполнения, таких как мебель, свет, различные аксессуары.</p>
                 <p><u><b>Не все хорошо, что дорого или является престижным брендом.</b></u> Есть продукция Европейских производителей, которую лучше не пытаться дублировать в условиях нашего, отечественного производства. Но есть также фирмы на Украине, изготавливающие продукцию отличного качества, а необходимый Вам внешний вид, соответствующий стилю Вашего проекта, создает дизайнер (эскизы, чертежи, выбор материала) и предоставляет их фирме изготовителю после Вашего утверждения. На фото объектов это указано в комментариях.</p>
@@ -56,6 +67,20 @@
             </section>
             <section class="gallery">
                 <a name="gallery"><h1>Галерея</h1></a>
+                <!-- <div class="wrapGallery">
+                    <span class="wrapImg"><img src="images/DSCN6271.jpg"></span>
+                    <span class="wrapImg"><img src="images/DSCN6234.jpg"></span>
+                    <span class="wrapImg"><img src="images/DSCN6219.jpg"></span>
+                    <span class="wrapImg"><img src="images/DSCN6217.jpg"></span>
+                    <span class="wrapImg"><img src="images/DSCN6216.jpg"></span>
+                    <span class="wrapImg"><img src="images/DSCN6210.jpg"></span>
+                    <span class="wrapImg"><img src="images/DSCN6206.jpg"></span>
+                    <span class="wrapImg"><img src="images/DSCN6205.jpg"></span>
+                    <span class="wrapImg"><img src="images/DSCN6204.jpg"></span>
+                    <span class="wrapImg"><img src="images/DSCN6203.jpg"></span>
+                    <span class="wrapImg"><img src="images/DSCN6182.jpg"></span>
+                    <span class="wrapImg"><img src="images/DSCN6201.jpg"></span>
+                </div> -->
                 <div id="cp_widget_1fb3f66b-060a-4f89-b051-c5d41636eb59">...</div>
                 <script type="text/javascript">
                 var cpo = [];
@@ -83,8 +108,15 @@
         </div>
     </main>
     <footer>Olga Volokyshina © 2016.</footer>
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
+    <!--build:js js/vendor.min.js-->
+    <!-- bower:js-->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/Materialize/bin/materialize.js"></script>
+    <!-- endbower-->
+    <!-- endbuild-->
+    <!-- build:js js/main.min.js-->
+    <script type="text/javascript" src="js/main.js"></script>
+    <!-- endbuild-->
 </body>
 
 </html>
