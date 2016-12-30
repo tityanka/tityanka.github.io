@@ -11,182 +11,28 @@
     <link rel="stylesheet" href="css/vendor.min.css">
     <link rel="stylesheet" href="css/main.min.css">
 </head>
-<script>
-$(document).ready(function() {
-    function heightDetect() {
-        $(".main_head").css("height", $(window).height());
-    };
-
-    heightDetect();
-    $(window).resize(function() {
-        heightDetect();
-    });
-
-    $('.main_head').parallax({
-        imageSrc: 'img/bg.jpg'
-    });
-
-    $(".top_mnu ul a").mPageScroll2id();
-
-    $(".toggle_mnu").click(function() {
-        $(".sandwich").toggleClass("active");
-        if ($(".top_mnu").is(":visible")) {
-            $(".top_mnu").fadeOut(600);
-            $(".top_mnu li a").removeClass("fadeInUp animated");
-        } else {
-            $(".top_mnu").fadeIn(600);
-            $(".top_mnu li a").addClass("fadeInUp animated");
-        };
-
-
-        $(".top_mnu ul a").click(function() {
-            $(".top_mnu").fadeOut(600);
-            $(".sandwich").removeClass("active");
-        }).append("<span>");
-
-    });
-
-    $(".top_text h1, .s_descr_wrap").animated("fadeInDown");
-    $(".top_text p").animated("fadeInUp");
-});
-</script>
 
 <body>
-    <header class="main_head" style="min-height: 620px;
-  padding-top: 20px;">
+    <header class="main_head">
         <div class="container">
             <div class="row">
-                <button class="toggle_mnu" style="width: 60px;
-  height: 60px;
-  float: right;
-  position: fixed;
-  right: 20px;
-  top: 20px;
-  z-index: 100;
-  background-color: #40bfac;
-  border: none;"><span class="sandwich" style="width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  margin-top: 30%;
-  z-index: 200;
-  display: block;"><span class="sw-topper" style="position: relative;
-  top: 0;
-  width: 40px;
-  height: 4px;
-  background: white;
-  border: none;
-  -webkit-border-radius: 4px 4px 4px 4px;
-  border-radius: 4px 4px 4px 4px;
-  -webkit-transition: top 0.2s, -webkit-transform 0.5s;
-  transition: top 0.2s, -webkit-transform 0.5s;
-  transition: transform 0.5s, top 0.2s;
-  transition: transform 0.5s, top 0.2s, -webkit-transform 0.5s;
-  display: block;"></span><span class="sw-bottom" style="position: relative;
-  width: 40px;
-  height: 4px;
-  top: 8px;
-  background: white;
-  border: none;
-  -webkit-border-radius: 4px 4px 4px 4px;
-  border-radius: 4px 4px 4px 4px;
-  -webkit-transition: top 0.2s, -webkit-transform 0.5s;
-  transition: top 0.2s, -webkit-transform 0.5s;
-  transition: transform 0.5s, top 0.2s;
-  transition: transform 0.5s, top 0.2s, -webkit-transform 0.5s;
-  -webkit-transition-delay: 0.2s, 0s;
-  transition-delay: 0.2s, 0s;
-  display: block;"></span><span class="sw-footer" style="position: relative;
-  width: 40px;
-  height: 4px;
-  top: 16px;
-  background: white;
-  border: none;
-  -webkit-border-radius: 4px 4px 4px 4px;
-  border-radius: 4px 4px 4px 4px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
-  display: block;"></span></span>
+                <button class="toggle_mnu"><span class="sandwich"><span class="sw-topper"></span><span class="sw-bottom"></span><span class="sw-footer"></span></span>
                 </button>
-                <nav class="top_mnu" style="position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  z-index: 50;
-  right: 0;
-  top: 0;
-  display: none;">
-                    <ul style="list-style-type: none;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  margin-top: 180px;">
-                        <li style=" "><a style="text-transform: uppercase;
-  color: #fff;
-  display: block;
-  font-size: 18px;
-  margin: auto;
-  opacity: 0;
-  position: relative;
-  height: 60px;" href="#about">Обо мне</a></li>
-                        <li style=" "><a style="text-transform: uppercase;
-  color: #fff;
-  display: block;
-  font-size: 18px;
-  margin: auto;
-  opacity: 0;
-  position: relative;
-  height: 60px;" href="#folio">Портфолио</a></li>
-                        <li style=" "><a style="text-transform: uppercase;
-  color: #fff;
-  display: block;
-  font-size: 18px;
-  margin: auto;
-  opacity: 0;
-  position: relative;
-  height: 60px;" href="#contacts">Контакты</a></li>
+                <nav class="top_mnu">
+                    <ul>
+                        <li><a href="#about">Обо мне</a></li>
+                        <li><a href="#folio">Портфолио</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="row">
-                <div class="top_wrapper" style="display: table;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 10;">
-                    <div class="top_description" style="display: table-row;">
-                        <div class="top_centered" style="display: table-cell;
-  text-align: center;
-  vertical-align: middle;">
-                            <div class="top_text" style="display: inline-block;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;">
-                                <h1 style="display: inline-block;
-  padding: 10px 30px;
-  color: #fff;
-  border: 7px solid #fff;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 2.8em;
-  background-color: rgba(0, 0, 0, 0.1);
-  letter-spacing: 12px;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-left: 20px;
-  padding-right: 8px;">Витер Татьяна</h1>
-                                <p style="text-transform: uppercase;
-  font-size: 1em;
-  color: #fff;
-  letter-spacing: 5px;
-  font-weight: bold;">Front-end разработчик</p>
+                <div class="top_wrapper">
+                    <div class="top_description">
+                        <div class="top_centered">
+                            <div class="top_text">
+                                <h1>Витер Татьяна</h1>
+                                <p>Front-end разработчик</p>
                             </div>
                         </div>
                     </div>
