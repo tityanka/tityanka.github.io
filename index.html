@@ -11,6 +11,45 @@
     <link rel="stylesheet" href="css/vendor.min.css">
     <link rel="stylesheet" href="css/main.min.css">
 </head>
+<script>
+$(document).ready(function() {
+    function heightDetect() {
+        $(".main_head").css("height", $(window).height());
+    };
+
+    heightDetect();
+    $(window).resize(function() {
+        heightDetect();
+    });
+
+    $('.main_head').parallax({
+        imageSrc: 'img/bg.jpg'
+    });
+
+    $(".top_mnu ul a").mPageScroll2id();
+
+    $(".toggle_mnu").click(function() {
+        $(".sandwich").toggleClass("active");
+        if ($(".top_mnu").is(":visible")) {
+            $(".top_mnu").fadeOut(600);
+            $(".top_mnu li a").removeClass("fadeInUp animated");
+        } else {
+            $(".top_mnu").fadeIn(600);
+            $(".top_mnu li a").addClass("fadeInUp animated");
+        };
+
+
+        $(".top_mnu ul a").click(function() {
+            $(".top_mnu").fadeOut(600);
+            $(".sandwich").removeClass("active");
+        }).append("<span>");
+
+    });
+
+    $(".top_text h1, .s_descr_wrap").animated("fadeInDown");
+    $(".top_text p").animated("fadeInUp");
+});
+</script>
 
 <body>
     <header class="main_head" style="min-height: 620px;
